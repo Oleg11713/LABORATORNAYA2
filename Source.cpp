@@ -65,16 +65,16 @@ void Massiv::vvod()
 	int choice = menu();
 	if (choice == 0)
 	{
-		int c, b;
+		int to, from;
 		cout << "Enter boundaries" << endl;
 		cout << "From: ";
-		cin >> b;
+		cin >> from;
 		cout << "To: ";
-		cin >> c;
+		cin >> to;
 		for (int k = 0; k < a; k++)
 			for (int i = 0; i < n; i++)
 				for (int j = 0; j < n; j++)
-					mas[k][i][j] = b + rand() % (c - b + 1);
+					mas[k][i][j] = from + rand() % (to - from + 1);
 	}
 	else if (choice == 1)
 	{
